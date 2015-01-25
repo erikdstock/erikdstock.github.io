@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <head>
-  <title>Erik's "Blog"</title>
+
+<!--got to title this thing-->
+  <title>Blog - Erik S</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Halant:300,400,500' rel='stylesheet' type='text/css'>
 </head>
 
 <main>
-  <h1>Github & Git:</h1>
-  <h2>Emerging Understandings and Reflections</h2>
-  <h4>1.17.15</h4>
+ <section>
+      <div id='header'>
+        <div id='title'>
+          <h1>Erik D Stockmeier</h1>
+        </div>
+        <div id='mepic'>
+          <img alt="just erik" src="../img/ecircle.jpg" />
+        </div>
 
+      </div>
+
+    </section>
+
+    <nav>
+      <div id='nav'>
+      <h2 hidden="hidden">Navigation</h2>
+      <a href='http://erikdstock.github.io'>Home</a>
+      <a href='index.html'>Recent</a>
+      <!--<a href='#' id="about"><h3>About</h3></a> Taking this out for now -->
+    </div>
+    </nav>
+
+<div id=bg>
   <section>
-    <p>
-      I've played the horn with a fun little ska group for about 5 years now. They've been around for much longer, but like any ska group lineup changes are the norm- I might only still around because horn players don't usually come as cheap as me.
-    </p>
-    <p>
-      When I joined this group, I learned all of my parts by ear listening to the e.p. the group had released the year before along with whatever live recordings I could find. It was pretty easy, all things considered. As time went on and I participated in writing new songs, frustrations began to emerge. We would spend an hour on some new riff, it would sound perfect to ears in all states of sobriety, and the next week it would be gone. Maybe one practice out of three we ended with something that sounded decent, but there was always that sense that something got lost and we might not eer recapture it.
-    </p>
-    <p>
-      One day someone must have grabbed a recording of it on a phone wedged just right in the couch cushion so that the microphone didn't completely bleed out as we played. There was no easy way to share these files with each other except by pushing the speakerphone up next to a microphone during practice, but it was enough to jot down an acoustic idea here or there. As smart phones took over, we added a layer by saving new changes and variations over time using different names. When I changed phones last year I made sure to keep my recordings, because I really dislike the changes we made to one song. I can't let go of my commitment to its 2013 sound: slower, with a more sauntering mood to match the tempo and lyrics.
-    </p>
-    <p>
-      Git works like this for people who are writing computer programs instead of music. Anyone who has worked on computer knows something about <em>saving</em>- with any traditional creative program (MS Word, maybe), you probably have been burned at some point because you didn't save. Git takes this idea of saving and builds on it by adding flexibility, introducing <em>version control</em> and making it easy for multiple people to collaborate simultaneously on the same project.
-    </p>
-    <p>
-      Because a computer program requires far more files than a single document, the first way Git differentiates itself from simply clicking <strong>save</strong> is by tracking multiple changes in a single project. In general a Git project maintains the versions across an entire directory; as the individual files are changed and saved, the <em>Git</em> program recognizes that they have changed. As a Git user approaches a milestone in their work that they want to save (called a <em>commit</em>) they tell the program to add these files to the "stage"- really just a way of saying "yes, I'm aware these files are changed, I changed them on purpose and want to remember it".
-    </p>
-    <p>
-      The final stage of this process is to<em>commit</em> the changes. Git requires that you attach a message to the commit: Essentially that you explain the milestone you are committing to. A commit message might be "make song faster to clash with mood of lyrics" or "remove bug preventing people from getting health insurance." Commits pile up in Git's log, allowing members of a project to scan a timeline of their entire project. If something goes wrong, they can even switch back to a previous version.
-    </p>
-    <p>
-      So far, everything <em>Git</em> resides on a single computer-it requires no internet connection and would be somewhat cumbersome for multiple people to work on the same project together. GitHub makes large-scale collaboration possible; it has been described as a tool that makes coding social.
-    </p>
-    <p>
-      GitHub adds a few more tricks to the existing power of Git: Like the more familiar google docs, multiple people can participate in and edit a project together through GitHub. GitHub is that cloud where projects are stored (actually called <em>repositories</em>). After making a commit on my computer, I can <em>push</em> that commit, including its message, up to GitHub. It will show that I made the change and my message explaining why I did it. I can likewise <em>pull</em> changes others have made to make sure I am using the most recent version, and if I try to commit changes that conflict with the current version on GitHub, Git will let me know.
-    </p>
-    <p>
-      Git is the software that assists in tracking changes accross a large project. GitHub is the most dominant internet service that extends these capabilities to larger groups and across larger distances than a single computer or network can allow. They work together to help us save our work, to understand its evolution together and to protect the software from irreversible, damaging changes. GitHub goes further by encouraging people to share code, even to take it and adapt it for their own purposes, to create their own versions or add features.
-    </p>
+    <div id="article">
+      <h1>Github & Git:</h1>
+      <h2>Early understandings & reflections</h2>
+      <h4>1.17.15</h4>
+      <section>
+        <p>
+          I've played the horn with a fun little ska group for about 5 years now. They've been around for much longer, but like any ska group lineup changes are the norm- I might only still around because horn players don't usually come as cheap as me.
+        </p>
+        <p>
+          When I joined this group, I learned all of my parts by ear listening to the e.p. the group had released the year before along with whatever live recordings I could find. It was pretty easy, all things considered. As time went on and I participated in writing new songs, frustrations began to emerge. We would spend an hour on some new riff, it would sound perfect to ears in all states of sobriety, and the next week it would be gone. Maybe one practice out of three we ended with something that sounded decent, but there was always that sense that something got lost and we might not eer recapture it.
+        </p>
+        <p>
+          One day someone must have grabbed a recording of it on a phone wedged just right in the couch cushion so that the microphone didn't completely bleed out as we played. There was no easy way to share these files with each other except by pushing the speakerphone up next to a microphone during practice, but it was enough to jot down an acoustic idea here or there. As smart phones took over, we added a layer by saving new changes and variations over time using different names. When I changed phones last year I made sure to keep my recordings, because I really dislike the changes we made to one song. I can't let go of my commitment to its 2013 sound: slower, with a more sauntering mood to match the tempo and lyrics.
+        </p>
+        <p>
+          Git works like this for people who are writing computer programs instead of music. Anyone who has worked on computer knows something about <em>saving</em>- with any traditional creative program (MS Word, maybe), you probably have been burned at some point because you didn't save. Git takes this idea of saving and builds on it by adding flexibility, introducing <em>version control</em> and making it easy for multiple people to collaborate simultaneously on the same project.
+        </p>
+        <p>
+          Because a computer program requires far more files than a single document, the first way Git differentiates itself from simply clicking <strong>save</strong> is by tracking multiple changes in a single project. In general a Git project maintains the versions across an entire directory; as the individual files are changed and saved, the <em>Git</em> program recognizes that they have changed. As a Git user approaches a milestone in their work that they want to save (called a <em>commit</em>) they tell the program to add these files to the "stage"- really just a way of saying "yes, I'm aware these files are changed, I changed them on purpose and want to remember it".
+        </p>
+        <p>
+          The final stage of this process is to<em>commit</em> the changes. Git requires that you attach a message to the commit: Essentially that you explain the milestone you are committing to. A commit message might be "make song faster to clash with mood of lyrics" or "remove bug preventing people from getting health insurance." Commits pile up in Git's log, allowing members of a project to scan a timeline of their entire project. If something goes wrong, they can even switch back to a previous version.
+        </p>
+        <p>
+          So far, everything <em>Git</em> resides on a single computer-it requires no internet connection and would be somewhat cumbersome for multiple people to work on the same project together. GitHub makes large-scale collaboration possible; it has been described as a tool that makes coding social.
+        </p>
+        <p>
+          GitHub adds a few more tricks to the existing power of Git: Like the more familiar google docs, multiple people can participate in and edit a project together through GitHub. GitHub is that cloud where projects are stored (actually called <em>repositories</em>). After making a commit on my computer, I can <em>push</em> that commit, including its message, up to GitHub. It will show that I made the change and my message explaining why I did it. I can likewise <em>pull</em> changes others have made to make sure I am using the most recent version, and if I try to commit changes that conflict with the current version on GitHub, Git will let me know.
+        </p>
+        <p>
+          Git is the software that assists in tracking changes accross a large project. GitHub is the most dominant internet service that extends these capabilities to larger groups and across larger distances than a single computer or network can allow. They work together to help us save our work, to understand its evolution together and to protect the software from irreversible, damaging changes. GitHub goes further by encouraging people to share code, even to take it and adapt it for their own purposes, to create their own versions or add features.
+        </p>
 
   </section>
+    </div>
+  </section>
+</div>
 </main>
+
+<section>
+      <h2 hidden="hidden">Footer</h2>
+      <div id='footer'>
+        <p>A <span>M</span>inimum <span>V</span>iable <span>P</span>roduct</p>
+      </div>
+</section>
 
