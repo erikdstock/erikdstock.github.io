@@ -28,14 +28,14 @@ div#header {
   width:auto;
 }
 
- /*Doesn't seem to be necessary w my floats?*/
+ /*Doesn't seem to be necessary w my floats? i don't know any more...*/
 div#title, div#mepic div#header{
   display:inline-block;
 }
 
 div#title {
   float:left;
-  width:400px;
+  width:400px; /*pretty much the min possible width, but text don't wrap nice*/
   height:124px;
 }
 
