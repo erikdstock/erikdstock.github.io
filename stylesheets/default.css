@@ -5,9 +5,7 @@ body {
   min-height:100%;
   color:#fffedb;
   font-family:'Droid Serif', serif;
-  /*
   background-color:#1e304a;
-*/
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -115,7 +113,7 @@ div#social {
 
 */
 
-#welcome {
+#content {
   background-color:#1e304a;
   clear:both;
   /*top:164px;
@@ -124,10 +122,10 @@ div#social {
   height:600px;
 }
 
-div#welcome > div {
+div#content > div {
   width:80%;
   margin-left:5%;
-  padding-top:2em; /*not margin? Why? margin pulls welcome div down too*/
+  padding-top:2em; /*not margin? Why? margin pulls content div down too*/
 }
 
 div#footer {

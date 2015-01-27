@@ -1,4 +1,6 @@
-
+body {
+		background: #1e304a;
+}
 
 #article {
 	background: #fffedb;
@@ -39,7 +41,7 @@
 			font-weight: 500;
 		}
 
-#bg {
+#bg { /*Do I still need this?*/
 	background: #1e304a;
 	min-height: 700px;
 }

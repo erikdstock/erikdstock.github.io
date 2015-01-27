@@ -11,3 +11,4 @@
 * nav is different in blog and main page esp link/text styling. figure out which is best esp in terms of text alignment. i've had to do a lot of styling on the header elements to make them squeeze into the nav on the main page. alex knoll's site puts the header tags outside like h3 - a href="#" - /a - /h3 but when i did this it created problems with my existing styling.
 * change css to use background-color on body rather than the "article" or whatever section of a page.
 * my face picture is in a div (absolute positioned) that is top:10px and right:10px. the picture is also margin-top/margin-right 10px. Why did I do this, did I realize what I was doing and what is going on?
+* learn more about MAIN tag vs body and header and footer and all those other ones
