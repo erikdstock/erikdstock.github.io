@@ -1,0 +1,38 @@
+/* include your css here */
+header {
+  background-color: blue;
+  color: white;
+  height: 150px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 60px;
+  display: inline-block;
+}
+
+#bar {
+  background-color: brown;
+  color: white;
+  border-top: 2px solid green;
+  border-bottom: 2px solid green;
+}
+
+h3 {
+  margin-left: 7.5%;
+}
+
+#article {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  border: 1px dashed black;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  min-width: 300px;
+}
