@@ -35,16 +35,16 @@ div#title {
   min-height:124px;
   height:auto;
 }
-    /*#title span {*/
+    /*#title span {
       font-size: 1.1em;
-      font-weight:100;
+      font-weight:100;*/
 
     }
-    #title h1 a {
-      text-decoration: none
+    #title a {
+      text-decoration: none;
     }
 
-    #title h1 a:visited {
+    #title a:visited {
       text-decoration: none;
     }
 
@@ -165,7 +165,7 @@ div#content > div {
 }
 
 div#footer {
-  position:fixed;
+  /*position:fixed;*/
   /*undo fixed position and just clear:both?*/
   bottom:0;
   height:25px;
