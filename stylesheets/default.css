@@ -30,28 +30,43 @@ div#title, div#mepic div#header{
 }
 
 div#title {
-  float:left;
-  width:400px; /*pretty much the min possible width, but text don't wrap nice :| */
-  height:124px;
+  float:left;/*?*/
+  width:70%; /*pretty much the min possible width, but text don't wrap nice :| */
+  min-height:124px;
+  height:auto;
 }
+    /*#title span {*/
+      font-size: 1.1em;
+      font-weight:100;
 
-          #title h1{
-            text-align:left;
-            margin-left:5%;
-            margin-top:44px;
-            font-size:26pt;
-            display:block;
-            width:80%;
+    }
+    #title h1 a {
+      text-decoration: none
+    }
 
-          }
+    #title h1 a:visited {
+      text-decoration: none;
+    }
+
+
+    #title h1{
+      text-align:left;
+      margin-left:5%;
+      margin-top:44px;
+      font-size:26pt;
+      display:block;
+      width:80%;
+      color: #fffedb;
+    }
+
 
 div#mepic {
   position:absolute;
   /*position:relative;*/
   width:150px;
-  height:150px;
-  top:10px;
-  right:10px;
+  height:400px;
+  top:0px;
+  right:0px;
   /*float:right;*/
   /*From before i made this absolute.*/
 
