@@ -12,3 +12,4 @@
 * change css to use background-color on body rather than the "article" or whatever section of a page.
 * my face picture is in a div (absolute positioned) that is top:10px and right:10px. the picture is also margin-top/margin-right 10px. Why did I do this, did I realize what I was doing and what is going on?
 * learn more about MAIN tag vs body and header and footer and all those other ones
+* figure out div.clear issue and what its supposed to do and why it didnt work 

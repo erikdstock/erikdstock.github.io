@@ -14,9 +14,6 @@ h1, h2, h3, h4, h5, h6{
   margin-bottom:0;
 }
 
-a {
-  color: #fffedb;
-}
 
 div#header {
   background: #225770;
@@ -24,6 +21,7 @@ div#header {
   color:#fffedb;
   font-family:'Droid Serif', serif;
   width:auto;
+  position:relative; /*adding this to hopefully fix header spacing*/
 }
 
  /*Doesn't seem to be necessary w my floats? i don't know any more...*/
@@ -33,7 +31,7 @@ div#title, div#mepic div#header{
 
 div#title {
   float:left;
-  width:400px; /*pretty much the min possible width, but text don't wrap nice*/
+  width:400px; /*pretty much the min possible width, but text don't wrap nice :| */
   height:124px;
 }
 
@@ -49,12 +47,13 @@ div#title {
 
 div#mepic {
   position:absolute;
+  /*position:relative;*/
   width:150px;
   height:150px;
   top:10px;
   right:10px;
-  /*float:right;
-  From before i made this absolute.*/
+  /*float:right;*/
+  /*From before i made this absolute.*/
 
 }
 
@@ -68,27 +67,49 @@ div#mepic {
     z-index: 5;
   }
 
+div.clear {
+  clear:both;
+  /*was told to do this to help picture not go down, unsure why, didn't work*/
+}
 
 #nav {
   background:#3d3418;
   color:#fffdcc;
   font-family:'Droid Serif', serif;
-  height:36px;
   border-top: 2px solid #fffdcc;
   border-bottom: 2px solid #fffdcc;
+  display:inline-block;
+  width:100%;
+  height:auto;
 }
 
+/*might need a list holder div with float left/relative position*/
 
-
-    #nav a {
-      display:inline-block;
-      text-decoration: none;
-      color: #fffedb;
-      margin-top:6px;
-      padding-left:10%;
-      font-size:20px;
-      line-height: 0;
+    #nav ul {
+      list-style: none;
+      padding:0;
+      margin: 0;
+      height:auto;
+      width:auto;
+      overflow:auto;
     }
+
+      #nav ul li {
+        display:inline-block;
+        padding-left: 9%;
+        height:auto;
+        width:auto;
+        float:left;
+      }
+
+        #nav ul li a {
+          display:inline-block;
+          text-decoration: none;
+          color: #fffedb;
+          font-size:22px;
+          line-height: 1.5em;
+          /*float:left;*/
+        }
 
     #about {
       float:right;
@@ -130,6 +151,7 @@ div#content > div {
 
 div#footer {
   position:fixed;
+  /*undo fixed position and just clear:both?*/
   bottom:0;
   height:25px;
   width:100%;
