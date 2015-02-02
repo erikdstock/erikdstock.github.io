@@ -164,6 +164,31 @@ div#content > div {
   padding-top:2em; /*not margin? Why? margin pulls content div down too*/
 }
 
+      .code {
+        padding: 3px 3%;
+        background-color: grey;
+        color:white;
+        overflow: auto;
+      }
+
+         .code pre {
+          white-space: pre-wrap;
+        }
+
+.f-left{
+  display:inline-block;
+  float:left;
+  padding-right:5%;
+  width:auto;
+  }
+
+.f-right {
+  display:inline-block;
+  float:left;
+  width:auto;
+  padding-left:5%;
+}
+
 div#footer {
   /*position:fixed;*/
   /*undo fixed position and just clear:both?*/
