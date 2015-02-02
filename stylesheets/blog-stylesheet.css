@@ -35,7 +35,7 @@ body {
 	margin-left: 5%;
 }
 		div#article a {
-			text-decoration: none;
+			/*text-decoration: none;*/
 			font-family:Halant;
 			color:black;
 			font-weight: 500;
@@ -47,5 +47,6 @@ body {
 }
 
 p {
-	padding: .5em;
+	margin-left: 5%;
+	margin-right: 5%;
 }
