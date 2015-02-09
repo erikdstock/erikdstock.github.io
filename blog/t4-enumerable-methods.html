@@ -48,16 +48,16 @@
         </p>
         <div class="code">
           <pre>#I live in a commune, sort of...
-          <pre>commune_members = ["eden", "charleen", "steff", "klint", "dovis", "eirik", "endrea", "brenda"]</pre>
-          <pre>commune_members.each {|name| puts name.capitalize}</pre>
-          <pre>=> Eden</pre>
-          <pre>=> Charleen</pre>
-          <pre>=> Steff</pre>
-          <pre>=> Klint</pre>
-          <pre>=> Dovis</pre>
-          <pre>=> Eirik</pre>
-          <pre>=> Endrea</pre>
-          <pre>=> Brenda</pre>
+          commune_members = ["eden", "charleen", "steff", "klint", "dovis", "eirik", "endrea", "brenda"]
+          commune_members.each {|name| puts name.capitalize}
+          => Eden
+          => Charleen
+          => Steff
+          => Klint
+          => Dovis
+          => Eirik
+          => Endrea
+          => Brenda</pre>
         </div>
         <p>
           Of course this is only a theoretical example-communes don't believe in capitalization- however, <strong>each</strong> is one very simple way we can pass a block of code to every element in an array or hash. In fact, Ruby has an entire module for dealing with collections of data like this. The enumerable module provides methods that iterate over a group of elements, apply the same block of code to each piece, and process the result in some specific way. Some of these methods are pretty easy to understand at face value: <strong>delete_if</strong> passes a block of code and deletes those values from the receiving object that return true.
@@ -67,8 +67,8 @@
         </p>
         <div class="code">
           <pre>#Dovis didn't wash the dishes again this week AND blew off house meeting. Now is our chance to find a gentle way of kicking them out...
-          <pre>commune_members.group_by { |name| name.include?("o") }</pre>
-          <pre> => {false=>["eden", "charleen", "steff", "klint", "eirik", "endrea", "brenda"], true=>["dovis"]} </pre>
+          commune_members.group_by { |name| name.include?("o") }
+           => {false=>["eden", "charleen", "steff", "klint", "eirik", "endrea", "brenda"], true=>["dovis"]} </pre>
         </div>
         <p>
           See? It's not you, Dovis. We just don't want any more "o" names in the house. It was a decision made by the community on pricinple and we couldn't have really even known whom it would affect until we called the <strong>group_by</strong> method, which made things pretty easy.
