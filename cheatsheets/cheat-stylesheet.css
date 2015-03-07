@@ -90,13 +90,13 @@ header {
 
   }
 
-  #nav p {
+  #nav h3 {
     text-align: center;
   }
 
   #nav li {
-    margin-bottom: .3em;
-    color: #f2f2f2
+    margin-bottom: 1.3em;
+    color: #f2f2f2;
   }
 
 
