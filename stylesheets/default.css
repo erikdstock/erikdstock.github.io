@@ -47,7 +47,7 @@ div#title {
       text-decoration: none;
     }
 
-    #title a:visited {
+    #title h1 a:visited {
       text-decoration: none;
     }
 
@@ -215,4 +215,12 @@ div#footer p {
 
 div#footer span {
   font-size: 1.2em
+}
+
+article a {
+  text-decoration: none;
+}
+article a:visited {
+  text-decoration: none;
+  color:white;
 }
