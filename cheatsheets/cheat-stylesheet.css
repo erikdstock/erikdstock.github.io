@@ -1,0 +1,164 @@
+/* Changes I made:
+-coloring, font (maybe you don't want it);
+-added height:100% to html and body- this is supposed to make nav height display properly when set to display:block;
+-added <code> styling for grouping similar methods;
+-made nav an id instead of a class
+-adding an h5 style for method notes
+-made an alternate nav that uses fixed position- just switch the comment if you don't like it!
+-found that adding margin/padding:0; to the body selector removes the annoying tiny margin
+
+*/
+
+html {
+  height:100%;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: arial;
+  height:100%;
+  margin: 0;
+  padding: 0;
+
+}
+
+header {
+  width: 100%;
+  background-color: #0b7abf;
+  padding:1em;
+  text-align: center;
+  color: #f2f2f2;
+  border-bottom: 1px solid #a2a2a2
+}
+
+#wrapper {
+  width:100%;
+}
+
+/*changed nav to an id instead of a class - using fixed position*/
+#nav {
+  position:fixed;
+  padding-top: 120px;
+  left:0;
+  top:0;
+  width:10%;
+  min-width: 100px;
+  border-right: 1px solid  #a2a2a2;
+  height:100%;
+  overflow: hidden;
+  background-color: #3f4c73;
+  color: #f2f2f2;
+  opacity:0.8;
+}
+
+#main {
+  float:right;
+  width:90%;
+  color: black;
+  background-color: #f2f2f2;
+  margin: 0 ;
+
+}
+
+
+/* nav without fixed position if you prefer */
+/*#nav {
+  float:left;
+  width:10%;
+  min-width: 100px;
+  border-right: 1px dotted black;
+  border-bottom: 1px dotted black;
+  height:100%;
+  overflow: hidden;
+  background-color: #3f4c73;
+  color: #f2f2f2;
+}
+
+#main {
+  overflow: hidden;
+  width:auto;
+  color: black;
+  background-color: #f2f2f2;
+
+}*/
+
+
+
+  #nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+
+  }
+
+  #nav p {
+    text-align: center;
+  }
+
+  #nav li {
+    margin-bottom: .3em;
+    color: #f2f2f2
+  }
+
+
+
+#main h5 {
+  font-style: italic;
+  font-size: 1em;
+  margin: 10px
+}
+#main ul{
+  line-height: 1.3em
+}
+
+/*Added some code styling*/
+#main code {
+  font-size: 1.2em;
+  background-color:#b2b2b2;
+  border-radius:3px;
+
+}
+
+#summary {
+  text-align: center;
+  margin: auto 20px;
+  border-bottom: 2px solid #a2a2a2;
+}
+
+#summary a {font-weight: bold;}
+
+.method {
+  text-align: center
+  width:100%;
+  margin: 3%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #a2a2a2;
+
+}
+
+.code {
+  background-color: black;
+  color: #0ddbb8;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+    pre {
+      white-space: pre-wrap;
+      font-size: 1.2em;
+      border-radius:2px;
+    }
+
+footer {
+  padding: 5px;
+  text-align:right;
+  clear:both;
+  background-color: #0ddbb8;
+  color: #f2f2f2;
+  z-index: 1;
+  border-top: 2px solid #a2a2a2;
+
+
+
+}

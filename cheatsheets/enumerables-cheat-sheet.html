@@ -1,0 +1,208 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Cheat Sheet</title>
+
+<!-- <link rel="stylesheet" type="text/css" href="../stylesheets/default.css"> -->
+<link rel="stylesheet" type="text/css" href="./cheat-stylesheet.css">
+</head>
+
+<body>
+  <header>
+    <h1>Cheat Sheet: Ruby Enumerables</h1>
+    <!-- Ruby logo image -->
+  </header>
+
+  <div id="wrapper">
+    <div id="nav">
+      <p>Methods</p>
+      <ul>
+        <li><a href="#all?">#all?</a></li>
+        <!-- <li><a href="#chunk">#chunk</a></li> Leaving this out because it is too complicated for me to understand. related method is #partition.-->
+        <li><a href="#collect">#collect</a></li>
+        <li><a href="#detect">#detect</a></li>
+        <li><a href="#each">#each</a></li>
+        <li><a href="#find">#find</a></li>
+        <li><a href="#inject">#inject</a></li>
+        <li><a href="#map">#map</a></li>
+        <li><a href="#none?">#none?</a></li>
+        <li><a href="#select">#select</a></li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <div id="summary">
+        <!-- <h1>Cheat Sheet: Ruby Enumerables</h1> -->
+      <!-- Ruby logo image -->
+      <h3>Enumerable Methods</h3>
+      <p>
+        Enumerable is a Ruby module containing methods that sort, search, and traverse over each element of a collection of data.  <a href="http://ruby-doc.org/core-2.2.0/Enumerable.html">The Enumerable Ruby Docs</a> lists all these handy methods for your viewing pleasure.
+      </p>
+      <p>
+        When passing a block to a hash element, the hash yields each key-value pair as an array in the format <code>[key, value]</code>. Thus while blocks acting on arrays are often described using <code>element</code> or <code>e</code> (<code>{|e| puts e}</code>, hashes commonly use <code>|key, value|</code> or <code>|k,v|</code>.
+      </p>
+      <p>
+        It's also worth keeping in mind that <strong>the order a hash yash yields its pairs can be unpredictable</strong>.
+      </p>
+    </div>
+
+      <div class="method">
+        <a name="all?"></a><a name="none?"></a>
+        <h4>#all?</h4>
+        <p>
+          This method passes each element of the object to the block and returns true if the block never returns false.  This is a good method to check if a collection of elements all have the same property.
+        </p>
+        <ul>
+          <h5>Notes:</h5>
+          <li><code>#none?</code> works opposite to<code>#all?</code>.</li>
+        </ul>
+        <div class="code">
+          <pre>numbers = [1,2,3,4,5]
+  numbers.all? {|num| num >=0 }
+  => true
+          </pre>
+        </div>
+      </div>
+
+
+      <!--Leaving #chunk out because it is a BIT advanced for me</div>
+      <!-- <div class="method">
+        <a name="chunk"></a>
+        <h4>#chunk</h4>
+        <p>
+          l;kjsadflk;j;lkj;lkj;ljk
+        </p>
+        <div class="code">
+          <pre>array = ["This","is","a","demonstration"]
+          </pre>
+        </div>
+      </div> -->
+
+
+      <div class="method">
+        <a name="each"></a>
+        <h4>#each</h4>
+        <p>
+          The <code>#each</code> method is an effective replacement for a for loop.  This method calls the block of code once for every element in <code>self</code> (in this case the array) and returns the original self object.  See <code>#map</code> for a method to return a new value based on the block.
+        </p>
+        <div class="code">
+          <pre>array = ["This","is","a","demonstration"]array.each {|element| puts element}
+  => This
+  => is
+  => a
+  => demonstration
+          </pre>
+        </div>
+      </div>
+
+      <div class="method">
+        <a name="each_cons"></a><a name="each_slice"></a>
+        <h4>#each_cons vs #each_slice</h4>
+        <p>
+          <code>#each_cons(n)</code> iterates through each element in an object, returning the following <code>n</code> consecutive elements. It stops when it prints the last element.
+        </p>
+        <p>
+          <code>#each_slice(n)</code> performs a similar task, but <code>slice</code>s <code>n</code> elements.
+        <div class="code">
+          <pre>array = ["~~~~", "Join,", "or", "die.", "~~~~"]
+array.each_cons(2) {|element| print element}
+  => ["Join", "us,"]["us,", "or"]["or", "die."]["die.", "~~~~"]
+array.slice(2) {|element| print element}
+  => "~~~~ Join,"
+     "or die."
+     "~~~~"
+          </pre>
+        </div>
+      </div>
+
+      <div class="method">
+        <a name="find"></a><a name="detect"></a>
+        <h4>#find</h4>
+        <p>
+          Traverses the object and returns the first element for which the code evaluates to <code>true</code>.
+        <ul>
+          <h4>Notes:</h4>
+          <li><code>#detect</code> is an alias for <code>#find</code>.</li>
+          <li><code>#find_index</code> operates in a similar manner but returns the array index.</li>
+          <li><code>#find_all</code>, despite its name, returns an array of all values that that evaluate <code>true</code> and thus is actually an alias for <a href="#select">select</a></li>
+
+        </ul>
+        <div class="code">
+          <pre>array = ["This","is","a","demonstration"]
+
+  =>
+          </pre>
+        </div>
+      </div>
+
+      <div class="method">
+        <a name="inject"></a>
+        <h4>#inject</h4>
+        <p>
+          This method combines all elements of an our object (array) using the command inside the block.  The first element in the block (sum) is called the accumulator value.  Each element in the block (num) is passed to the accumulator.  At the end of the iteration, the final value (sum) is returned.I think about inject by using it to sum numbers.  The second element in the block alters the previous element.
+        </p>
+        <div class="code">
+          <pre>numbers = [1,2,3,4,5]
+  numbers.inject {|sum,num| sum + num}
+  => 15
+          </pre>
+        </div>
+      </div>
+
+
+      <div class="method">
+        <a name="map"></a><a name="collect"></a>
+        <h4>#map</h4>
+        <p>
+          This method is similar to <code>#each</code> except it actually returns a new array containing the results of running the block on each element of the object passed through.
+        </p>
+        <code>#collect</code> is an alias for <code>#map</code>.
+        <p>
+
+        </p>
+        <div class="code">
+          <pre>numbers = [1,2,3,4,5]
+  numbers.map {|num| num * 2}
+  => [2, 4, 6, 8, 10]
+  numbers.collect {|num| num * 2} == numbers.map {|num| num * 2}
+  => true
+          </pre>
+        </div>
+      </div>
+
+
+
+      <div class="method">
+        <a name="select"></a>
+        <h4>#select</h4>
+        <p>
+          This method returns an array containing all elements for which the block evaluates as <code>true</code>.  In the example below, <code>#select</code> searches each element of the array for a length >= 3.  If this evaluates <code>true</code>, the element is included in the new array to be returned.
+        </p>
+        <ul>
+          <h5>Notes:</h5>
+          <li><code>#find_all</code> is an alias for <code>#select</code>.</li>
+          <li><code>#reject</code> works opposite to <code>#select</code>, returning an array of values that evaluate as <code>false</code>.</li>
+        </ul>
+
+        <div class="code">
+          <pre>array = ["This","is","a","demonstration"]
+  array.select {|element| element.length >=3}
+  => ["This", "demonstration"]
+  array.reject {|element| element.length >=3}
+  => ["is", "a"]
+          </pre>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <h5>Created by CJ Wilson & Erik Stockmeier</h5>
+    </footer>
+
+
+  </div>
+
+</body>
+</html>
