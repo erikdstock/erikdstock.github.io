@@ -36,7 +36,7 @@ header {
 }
 
 /*changed nav to an id instead of a class - using fixed position*/
-#nav {
+/*#nav {
   position:fixed;
   padding-top: 120px;
   left:0;
@@ -59,13 +59,13 @@ header {
   margin: 0 ;
 
 }
-
+*/
 
 /* nav without fixed position if you prefer */
-/*#nav {
+#nav {
   float:left;
   width:10%;
-  min-width: 100px;
+  min-width: 140px;
   border-right: 1px dotted black;
   border-bottom: 1px dotted black;
   height:100%;
@@ -80,7 +80,7 @@ header {
   color: black;
   background-color: #f2f2f2;
 
-}*/
+}
 
 
 
