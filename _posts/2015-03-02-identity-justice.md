@@ -1,0 +1,23 @@
+---
+layout:     post
+title:      "Justice as a Core Value"
+subtitle:   ""
+date:       2015-03-02
+author:     "Erik Stockmeier"
+header-img: "img/ed.jpg"
+---
+<p>
+<em>Justice</em> is a very tricky word and probably dangerous for one to hold as a "core value." It's a loaded word that can find a niche anywhere on any political spectrum. For example, I find most of the criminal justice system -from laws and courts to police and prisons- bankrupt and in need of immediate replacement. I don't really feel like going into it here, but I would start by looking at the general phenomenon of <a href="http://www.prisonpolicy.org/reports/pie.html">mass incarceration</a>, working through lenses of race, of class, of gender and nationality, to individual ways that the criminal justice system is used to maintain oppression such as the <a href="https://chicagopiccollective.wordpress.com/">school-to-prison pipeline</a> and, of course, whatever the latest outrage committed by the cops is- currently either video of some police killing a homeless man in Los Angeles or the revelation that <a href="http://www.theguardian.com/us-news/2015/feb/24/chicago-police-detain-americans-black-site">the Chicago Police Department is operating a "black site" interrogation facility a few miles from my house</a>. This is to say nothing of whether or not the presence of beat cops reduce crime or make neighborhoods healthier by more holisitic measures or whether laws are fair or <em>just</em> in the first place. In general, I'm against them. Yet I think <strong>justice</strong> is really important, especially as a part of every white person in the United States' vocabulary.
+</p>
+<p>
+So criminal justice I am opposed to which is fine because I think it is a really perverse and backwards conception of justice anyways. Of course there are other people who will say justice is illusory or just something we made up because there are lions and sharks and whatever, but we are literally killing all the lions and sharks by destroying their habitats and hunting them down- and whatever they are up to, we have the ability to sit and reason and blog about it, so I'm not really interested in dealing with those sorts of straw man arguments either. The lack of imagination, height of privilege that it must take to earnestly disengage from the idea of justice - it boggles the mind.
+</p>
+<p>
+I do think that justice is a real thing, or I choose to make it a real thing if you like, and I think criminal justice goes about it all wrong. Some folks will shy away from the phrase <em>social justice</em>; that's on them. I don't care. I do think that one has to recognize that we live in an unjust world, one where the rules of the game, the starting lines, the incentives and consequences are different for different people in a way that make the game unreliable and unfun. If we consider <em>freedom</em> a core value then we must recognize that different classes of people have different levels of freedom; the same goes for almost anything else that could matter or be measured by even the most intangible meter. Prioritizing <em>justice</em> is addressing that inequality first.
+</p>
+<p>
+This affects my own sense of the stereotype threat. Last week I went maybe too deep into what amounts to my own sense of white male guilt. I think this is a common pitfall for people who recognize their privilege but feel uncomfortable with it (as we should!)- and a more common reaction is to reject the feeling and analysis outright through some avoidance behavior. But another, more empowering option, is to take the feeling but not let it drive one's self overboard: To recognize injustice and commit one's self to destroying it (or <em>creating justice</em> if you are feeling more optimistic). I'm pretty confident that I've done that so far in my life: Not always perfect, but always open to evolve, learn and find a better path. This is not hocus pocus for me- it is a serious effort and something that gives me comfort and purpose when I worry that I'm just some white dude.
+</p>
+<p>
+I also understand that, not knowing me, this might all sound like hubris and self-congratulatory not-racist back patting. You'll have to just trust me that I'm doing my best to live this out in real life, to start these conversations when possible (including here in case any other white people are reading this? Let's talk about justice!) and to exist in that discomfort without letting it give way to despair or knee-jerk defensiveness.
+</p>

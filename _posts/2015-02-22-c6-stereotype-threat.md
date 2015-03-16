@@ -1,0 +1,44 @@
+---
+layout:     post
+title:      "Stereotype Threat"
+subtitle:   ""
+date:       2015-02-22
+author:     "Erik Stockmeier"
+header-img: "img/ed.jpg"
+---
+<p>
+I'm 31 years old, which means I have been living in Chicago, Illinois for almost 10 years. I came here after going to college in Peoria. In those first 22 years I developed a pretty healthy radical leftism that I continue to nurture and decided I wanted to devote my life in some form or another to the struggle for social justice. Easy. So I moved to Chicago as a grown-up because it seemed to be a happening place.
+</p>
+<p>
+In the intervening years I've tried a couple different approaches to this ambitious life goal: For the first 4 years or so I held onto a pretty sweet pseudo-engineering job where I was able to basically set my own hours. I worked as little as I could while maintaining a pretty opulent slacker lifestyle and put as much extra energy as possible into projects that couldn't afford to pay me, in particular an awesome community center and <a href="www.therecyclery.org">The Recyclery Collective</a>, a collective bike shop where I helped people teach themselves mechanics among other things. It was great, but ultimately unsustainable.
+</p>
+<p>
+Then I went back to school to be a teacher and I became a teacher. I taught 8th grade history for one incredibly difficult year in Chicago Public Schools before losing my job in a "school action" tied to the <a href="http://inthesetimes.com/working/entry/16804/CTU_report_CPS_chicago_closing"> closing of almost 50 CPS schools, almost entirely in the cities poorest black and brown neighborhoods</a>. The experience was heartbraking, but affirmed many of my beliefs about the role of public education in society- and its position as a battleground in the eyes of investment bankers and neoliberals who want to reform urban spaces for themselves (and get rich doing it). Long story short: I'm still passionately committed to public education, but unsure if it is the best path for me. Pretty sure it isn't. I never really got my teacher legs (they say it takes 5-10 years). I don't want to teach privileged kids and I don't want to reporoduce an oppressive power dynamic as a white man in front of Chicago's mostly student-of-color population. Maybe I'm making excuses, though.
+</p>
+<p>
+Now I'm perched to leave perhaps my favorite grown-up job yet, one that gives me a strong sense of purpose but offers little hope for personal advancement (I basically got into DBC on a fluke application and decided to run with it). I work for a legal aid organization. All of my superiors are attorneys. Startlingly few of my coworkers are cis-gendered men. It is like a bizzarro job. I love it in so many ways. But after DBC I won't be able to <em>afford</em> to go back and make loan payments, and anyhow that would defeat the purpose of learning to code. I definitely don't want to learn to be a lawyer.
+</p>
+<p>
+So the Stereotype Threat refers to a phenomenon where members of an out-group become "self-handicapping" due to fears of confirming a negative stereotype about their group. I really need to stretch to find a truly damaging negative stereotype about any of my groups. So here is what I've got. It's entirely possible that I'll come back and hate myself an hour after posting this, so if this text trails off here, I'm sorry for being gross:
+</p>
+<p>
+For a human being, I have benefitted from a hugely unfair number of advantages and  chances. People think I'm good at music, but I went to a public school with an amazing music program because members of my groups had fled the city and orchestrated tax laws in a way that they wouldn't have to fund schools in poorer areas. I dragged my feet off to college with near complete disinterest, only dimly aware that there are communities where a university education isn't a foregone conclusion. I literally chose to not work too much because I found it unfulfilling. I've jumped careers multiple times in my 20s and now early 30s. As one of not too many men at my current job, I worry that my positive reviews come from my supervisors (all women) assuming that I am responsibile for work actually completed by my coworkers. That maybe someone will see through whole charade, or that I will flounder in an environment where I don't have that comparative privilege. I've had too many second chances and too many legs up. Were I a person of color or a woman there is no doubt in my mind that my options today would be much more limited.
+</p>
+<p>
+This is all to say nothing of the massive risk I'm taking with DBC- loans, walking away from a job I like, et cetera.
+</p>
+<p>
+And so now I'm going into the world of technology and software development. I don't want to waste energy rehashing all the controversies in the startup world right now. In between reading books about writing code I've been meandering through <a href="www.twitter.com/shanley">Shanley's</a> e-book "YOUR STARTUP IS BROKEN: INSIDE THE TOXIC HEART OF TECH CULTURE." That is they way they write the title, in all-caps, so I'm going with it. I like it. I like the way Shanley is completely relentless in her critique of this world because it speaks to a lot of the fears I have going into this field.
+</p>
+<p>
+At this point I think it is safe to say that the "Techie Bro" has come into its own as a justifiable and adequately negative stereotype about people of my race and gender. And that is my new fear. It was as big a part of my vetting process for DBC as any concern about job placement, something I discussed with a member of the Chicago staff. I'm confident that this is the right choice for me and even more confident that I can enter this world without embodying the stereotype, but it still looms over me. There is also the issue in urban area that the young creative class plants its talons of <a href="https://www.youtube.com/watch?v=j0EyzE8geR0">gentrificaiton</a>. This is a whole separate thing and something you can't avoid as a white person moving into the city. I actually think that I do a pretty good job with this- though its with good reason the biggest issue where my privilege manifests as a stereotype with people I hang with.
+</p>
+<p>
+I'm looking at my cohort now: With 3 weeks before the on-site starts all but one of us appear to be men- and the racial breakdown looks just as bad. This is in a program that actively pushes us to think about and find ways to resist oppression in the industry. And the industry of code schools presents itself as an accessible alternative to expensive university educations- but even if the return on investment is better, it would seem (from this one data point- other cohorts are much more diverse) that it isn't good enough.
+</p>
+<p>
+My organization is housed in a building downtown that is named after some bank. I hate when the elevator stops on their floors because it slows me down from returning from my second trip to get free coffee downstairs (no one second-guesses me) and often means I'll have to listen to a conversation from some Banker Bros, which probably is only <strong>not</strong> a thing because bankers have been around long enough for us to have normalized that sort of sexism. Anyhow, it's sometimes shocking what these bankers will say in front of me, a stranger, thinking that I am one of them. Thoughts that I would think would give shame to any person with an ounce of sense caught uttering them in public. But I get to hear it, and more often than not I don't speak up. Because it is easier not to.
+</p>
+<p>
+I guess all this is to say that I'm entering a new world with a healthy and necessary sense of skepticism. I know I need to get better at speaking up when I hear people saying messed upthings or acting out oppressive relationships. I think I have a pretty good handle on recognizing them and I'm good at taking criticism when someone calls me out. I'm hopeful that coding will become a valuable tool in continuing some of these struggles myself.
+</p>
