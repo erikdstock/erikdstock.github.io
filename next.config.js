@@ -1,7 +1,7 @@
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
-// const withImages = require('next-images')
+const withImages = require('next-images')
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
@@ -57,8 +57,7 @@ const securityHeaders = [
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 module.exports = withBundleAnalyzer(
-  // withImages({
-  {
+  withImages({
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
@@ -103,6 +102,5 @@ module.exports = withBundleAnalyzer(
 
       return config
     },
-  }
+  })
 )
-// )

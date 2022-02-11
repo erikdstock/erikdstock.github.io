@@ -41,7 +41,21 @@ export function dateSortDesc(a: string, b: string) {
   return 0
 }
 
-export async function getFileBySlug(type: 'authors' | 'blog', slug: string | string[]) {
+interface MDXWithFrontMatter<T> {
+  mdxSource: string
+  toc: Toc
+  frontMatter: T & {
+    date: string | null
+    readingTime: ReturnType<typeof readingTime>
+    slug: string | null
+    fileName: string
+  }
+}
+
+export async function getFileBySlug<T>(
+  type: 'authors' | 'blog',
+  slug: string
+): Promise<MDXWithFrontMatter<T>> {
   const mdxPath = path.join(root, 'data', type, `${slug}.mdx`)
   const mdPath = path.join(root, 'data', type, `${slug}.md`)
   const source = fs.existsSync(mdxPath)
@@ -103,7 +117,7 @@ export async function getFileBySlug(type: 'authors' | 'blog', slug: string | str
       readingTime: readingTime(code),
       slug: slug || null,
       fileName: fs.existsSync(mdxPath) ? `${slug}.mdx` : `${slug}.md`,
-      ...frontmatter,
+      ...(frontmatter as T),
       date: frontmatter.date ? new Date(frontmatter.date).toISOString() : null,
     },
   }
