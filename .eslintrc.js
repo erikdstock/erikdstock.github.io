@@ -28,6 +28,7 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton'],
       },
     ],
+    '@next/next/no-img-element': 'off',
     'react/prop-types': 0,
     'no-unused-vars': 0,
     'react/no-unescaped-entities': 0,
