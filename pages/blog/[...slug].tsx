@@ -38,7 +38,7 @@ export const getStaticProps: GetStaticProps<{
   // @ts-ignore
   const authorList = post.frontMatter.authors || ['default']
   const authorPromise = authorList.map(async (author) => {
-    const authorResults = await getFileBySlug<AuthorFrontMatter>('authors', [author])
+    const authorResults = await getFileBySlug<AuthorFrontMatter>('authors', author)
     return authorResults.frontMatter
   })
   const authorDetails = await Promise.all(authorPromise)

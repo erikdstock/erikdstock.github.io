@@ -1,5 +1,4 @@
 import SocialIcon from '@/components/social-icons'
-import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
 import { ReactNode } from 'react'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
@@ -23,7 +22,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
         </div>
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center space-x-2 pt-8">
-            <Image
+            <img
               src={avatar}
               alt="avatar"
               width="192px"
