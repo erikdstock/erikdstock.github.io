@@ -29,7 +29,6 @@ on:
 #       - name: Install Dependencies
 #         run: yarn install
 
-#   lint:
 jobs:
   build:
     runs-on: ubuntu-20.04
@@ -40,6 +39,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 17.3.1
+          cache: 'yarn'
       - run: yarn install
       - run: yarn typecheck
       - run: yarn lint
