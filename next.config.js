@@ -58,6 +58,9 @@ const securityHeaders = [
  **/
 module.exports = withBundleAnalyzer(
   withImages({
+    // remove svg support from default next-images extensions so @svgr/webpack handles them
+    // https://github.com/twopluszero/next-images#file-extensions
+    fileExtensions: ['jpg', 'jpeg', 'png', 'gif', 'ico', 'webp', 'jp2', 'avif'],
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
@@ -73,7 +76,7 @@ module.exports = withBundleAnalyzer(
     },
     webpack: (config, { dev, isServer }) => {
       config.module.rules.push({
-        test: /\.(png|jpe?g|gif|mp4)$/i,
+        test: /\.(mp4)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -87,6 +90,7 @@ module.exports = withBundleAnalyzer(
 
       config.module.rules.push({
         test: /\.svg$/,
+        issuer: /\.[jt]sx?$/,
         use: ['@svgr/webpack'],
       })
 
