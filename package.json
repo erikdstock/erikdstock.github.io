@@ -9,8 +9,9 @@
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
-    "typecheck": "tsc --pretty --noEmit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "echo 'Test: not implemented'",
+    "typecheck": "tsc --pretty --noEmit"
   },
   "dependencies": {
     "@fontsource/inter": "4.5.2",
