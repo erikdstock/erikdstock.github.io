@@ -1,12 +1,23 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import siteMetadata from '@/data/siteMetadata'
+
+/*
+  This form will not work as-is because it relies on the non-static next.js `/api` routes.
+ */
 
 const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
   const inputEl = useRef<HTMLInputElement>(null)
   const [error, setError] = useState(false)
   const [message, setMessage] = useState('')
   const [subscribed, setSubscribed] = useState(false)
+
+  useEffect(() => {
+    console.warn(
+      'Static site does not support NewsletterForm api routes by default.' +
+        '\nImplement your own or remove this from the layout.'
+    )
+  }, [])
 
   const subscribe = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
