@@ -6,6 +6,8 @@
     "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
     "build": "next build && node ./scripts/generate-sitemap",
+    "export": "next export",
+    "serve:static": "npx serve out",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "compose": "node scripts/compose.js",
