@@ -4,11 +4,13 @@ import matter from 'gray-matter'
 import path from 'path'
 import readingTime from 'reading-time'
 import getAllFilesRecursively from './utils/files'
+import { isVisiblePost } from './environment'
 import { PostFrontMatter } from 'types/PostFrontMatter'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import { Toc } from 'types/Toc'
 // Remark packages
 import remarkGfm from 'remark-gfm'
+// TODO: deprecated - says to use remark-gfm - why is it here?
 import remarkFootnotes from 'remark-footnotes'
 import remarkMath from 'remark-math'
 import remarkExtractFrontmatter from './remark-extract-frontmatter'
@@ -140,7 +142,7 @@ export async function getAllFilesFrontMatter(folder: 'blog') {
     const source = fs.readFileSync(file, 'utf8')
     const matterFile = matter(source)
     const frontmatter = matterFile.data as AuthorFrontMatter | PostFrontMatter
-    if ('draft' in frontmatter && frontmatter.draft !== true) {
+    if (isVisiblePost(frontmatter)) {
       allFrontMatter.push({
         ...frontmatter,
         slug: formatSlug(fileName),

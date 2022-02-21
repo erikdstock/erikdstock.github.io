@@ -2,7 +2,7 @@
 
 # Tailwind Nextjs Starter Blog (Static version)
 
-This is a static site version of the [timlrx/tailwind-nextjs-starter-blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) blogging starter template. It features typescript, a comprehensive setup for handling markdown and MDX files, automatic deployment to github pages and commit hooks for code quality. The original repo's instructions (as of v1.5) are available in the [/docs](./docs/README.md).
+This is a static site version of the [timlrx/tailwind-nextjs-starter-blog][forked-starter] blogging starter template. It features typescript, a comprehensive setup for handling markdown and MDX files, automatic deployment to github pages and commit hooks for code quality. The original repo's instructions (as of v1.5) are available in the [/docs](./docs/README.md).
 
 Because the base was tweaked to make a static website, certain server-only features - namely `next/image` and the api routes used for newsletter subscriptions - will not work. The former has been removed; the latter routes remain because they affect layout and you may want to implement your own newsletter provider.
 
@@ -16,12 +16,17 @@ npx degit erikdstock/erikdstock.github.io#static-base
 
 From there follow the [original README](./docs/README.md), ignoring references to features like `next/image`:
 
-> 1. Personalize `siteMetadata.js` (site related information)
-> 2. Personalize `authors/default.md` (main author)
-> 3. Modify `projectsData.js`
-> 4. Modify `headerNavLinks.js` to customize navigation links
-> 5. Add blog posts
->    ...
+1.  Personalize `siteMetadata.js` (site related information)
+2.  Personalize `authors/default.md` (main author)
+3.  Modify `projectsData.js`
+4.  Modify `headerNavLinks.js` to customize navigation links
+5.  Add blog posts
+6.  Test that the site can build: `yarn build && yarn export && yarn serve:static`
+7.  Enjoy the many easter eggs (unmarked TODOs) I have left for you to enjoy! These likely include
+    - Updating default styles
+    - Updating dependencies
+    - Deciding whether you want to implement the discussion or newsletter functionality
+    - Optionally, make a pull request back to the `static-base` branch to help others.
 
 ## Installation
 
@@ -81,24 +86,20 @@ layout: PostLayout
 
 ### Compose
 
-Run `node ./scripts/compose.js` to bootstrap a new post.
+Run `yarn compose` to bootstrap a new post.
 
-Follow the interactive prompt to generate a post with pre-filled front matter.
+Follow the interactive prompt to generate a post with pre-filled front matter. `PostLayout` is the default layout, while `PostSimple` is... simpler.
 
 ## Deploy
 
-**Vercel**  
-The easiest way to deploy the template is to use the [Vercel Platform](https://vercel.com) from the creators of Next.js. Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-**Netlify / GitHub Pages / Firebase etc.**  
-As the template uses `next/image` for image optimization, additional configurations have to be made to deploy on other popular static hosting websites like [Netlify](https://www.netlify.com/) or [GitHub Pages](https://pages.github.com/). An alternative image optimization provider such as Imgix, Cloudinary or Akamai has to be used. Alternatively, replace the `next/image` component with a standard `<img>` tag. See [`next/image` documentation](https://nextjs.org/docs/basic-features/image-optimization) for more details.
-
-The API routes used in the newsletter component cannot be used in a static site export. You will need to use a form API endpoint provider and substitute the route in the newsletter component accordingly. Other hosting platforms such as Netlify also offer alternative solutions - please refer to their docs for more information.
+This blog is based on a starter that must deploy to a server environment, but has been modified to work with any static hosting service. It is configured to automatically deploy to github pages if you name your repo `YOUR_USERNAME.github.io`. If you don't need that or are not using github as your git host, edit or remove the files in the [.github](./github) folder.
 
 ## Support
 
-Using the template? Support this effort by giving a star on GitHub, sharing your own blog and giving a shoutout on Twitter or becoming a project [sponsor](https://github.com/sponsors/timlrx).
+This template is provided as-is, though I'll happily accept issues or PRs to fix bugs related to the static site customizations here. For other issues see the [original starter][https://github.com/timlrx/tailwind-nextjs-starter-blog#support].
 
 ## License
 
 [MIT](https://github.com/erikdstock/erikdstock.github.io/blob/master/LICENSE) © [Erik Stockmeier](https://erikdstock.github.io)
+
+[forked-starter]: https://github.com/timlrx/tailwind-nextjs-starter-blog

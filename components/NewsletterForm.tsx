@@ -2,10 +2,11 @@ import React, { useEffect, useRef, useState } from 'react'
 
 import siteMetadata from '@/data/siteMetadata'
 
+const NEWSLETTER_ENABLED = false
+
 /*
   This form will not work as-is because it relies on the non-static next.js `/api` routes.
  */
-
 const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
   const inputEl = useRef<HTMLInputElement>(null)
   const [error, setError] = useState(false)
@@ -18,6 +19,8 @@ const NewsletterForm = ({ title = 'Subscribe to the newsletter' }) => {
         '\nImplement your own or remove this from the layout.'
     )
   }, [])
+
+  if (!NEWSLETTER_ENABLED) return null
 
   const subscribe = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
