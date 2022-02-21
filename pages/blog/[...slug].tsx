@@ -66,10 +66,11 @@ export default function Blog({
   next,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { mdxSource, toc, frontMatter } = post
-
+  const isDraft = 'draft' in frontMatter && frontMatter.draft !== true
+  const showDraft = process.env.NODE_ENV === 'development'
   return (
     <>
-      {'draft' in frontMatter && frontMatter.draft !== true ? (
+      {!isDraft || showDraft ? (
         <MDXLayoutRenderer
           layout={frontMatter.layout || DEFAULT_LAYOUT}
           toc={toc}
