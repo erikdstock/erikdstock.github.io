@@ -2,7 +2,7 @@
 
 # Tailwind Nextjs Starter Blog (Static version)
 
-This is a static site version of the [timlrx/tailwind-nextjs-starter-blog][forked-starter] blogging starter template. It features typescript, a comprehensive setup for handling markdown and MDX files, automatic deployment to github pages and commit hooks for code quality. The original repo's instructions (as of v1.5) are available in the [/docs](./docs/README.md).
+This is a static site version of the [timlrx/tailwind-nextjs-starter-blog][forked-starter] blogging starter template. It features typescript, a comprehensive setup for handling markdown and MDX files, automatic deployment to github pages and commit hooks for code quality. The original repo's instructions (as of v1.5) are available in the [archived starter files](./base-archive).
 
 Because the base was tweaked to make a static website, certain server-only features - namely `next/image` and the api routes used for newsletter subscriptions - will not work. The former has been removed; the latter routes remain because they affect layout and you may want to implement your own newsletter provider.
 
