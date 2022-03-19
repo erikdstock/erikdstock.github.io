@@ -1,12 +1,12 @@
 ---
-name: Erik Stockmeier
+name: replace-me
 avatar: /static/images/avatar.png
-occupation: Software engineer
+occupation: blogger
 # company: Stanford University
-email: email@erikstockmeier.com
+email: youremail@x.com
 # twitter: https://twitter.com/
-linkedin: https://www.linkedin.com/in/erikdstock
-github: https://github.com/erikdstock
+linkedin: https://www.linkedin.com/in/replace-me
+github: https://github.com/replace-me
 ---
 
-Erik Stockmeier is a software engineer and thinker living in the United States.
+Author bio goes here.

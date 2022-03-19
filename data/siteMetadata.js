@@ -1,21 +1,23 @@
+const githubUsername = 'your-username'
+
 const siteMetadata = {
-  title: 'Erik Online',
-  author: 'Erik Stockmeier',
-  headerTitle: 'Erik Online',
-  description: 'A blog dedicated to Erik',
+  title: 'My weblog',
+  author: 'Joey Jo-Jo Junior Shabbadoo',
+  headerTitle: "The poster's corral",
+  description: 'Website description goes here',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://erikstockmeier.com',
-  siteRepo: 'https://github.com/erikdstock/erikdstock.github.io',
+  siteUrl: `https://${githubUsername}.github.io`,
+  siteRepo: `https://github.com/${githubUsername}/${githubUsername}.github.io`,
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'address@yoursite.com',
-  github: 'https://github.com/erikdstock',
+  github: `https://github.com/${githubUsername}`,
   // twitter: 'https://twitter.com/',
   // facebook: 'https://facebook.com',
-  youtube: 'https://www.youtube.com/erikdstock',
-  linkedin: 'https://www.linkedin.com/in/erikdstock',
+  // youtube: 'https://www.youtube.com/your-link',
+  // linkedin: 'https://www.linkedin.com/in/your-link',
   locale: 'en-US',
   analytics: {
     // supports plausible, simpleAnalytics, umami or googleAnalytics
