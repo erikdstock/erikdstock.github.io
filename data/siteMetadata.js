@@ -5,10 +5,10 @@ const siteMetadata = {
   description: 'A blog dedicated to Erik',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://erikstockmeier.com',
+  siteUrl: 'https://erik-online.com',
   siteRepo: 'https://github.com/erikdstock/erikdstock.github.io',
-  siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  siteLogo: '/static/images/logo.svg',
+  image: '/static/images/avatar.jpeg',
   socialBanner: '/static/images/twitter-card.png',
   email: 'address@yoursite.com',
   github: 'https://github.com/erikdstock',
