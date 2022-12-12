@@ -2,10 +2,19 @@
 title: I messed up my computer again.
 date: '2022-12-12'
 tags: ['homebrew', 'macOS', 'linux']
-draft: true
 summary: I somehow deleted the contents of /usr/local/bin
 images: []
 layout: PostLayout
 ---
 
 Last week I got my first work machine upgrade in a few years, an M1 macbook pro. It seems pretty nice so far, but they always do.
+
+One of the side effects of this was that I had to make some changes to my dotfiles to accomodate both M1 and Intel Macs, and so when an installer told me to update my `PATH` on my personal computer this weekend I thought 'No, I will just run it again and tell it to install in my homebrew prefix path, `/usr/local/bin`'.
+
+This worked fine, but for an unrelated reason I decided to uninstall it once more. I must have got something wrong there (always read your `curl` install scripts and docs first) because now the directory that holds all my command-line tools was empty. I first noticed this because even `brew` was gone. No problem, in fact, GREAT. This is where years of paying for [BackBlaze](backblaze.com) finally pay off:
+
+![BackBlaze failed me.](/static/images/backblaze-fail.png)
+
+It seemed like this was going to be very bad - I couldn't start a new shell session (`/usr/local/bin/zsh` not found) - but after a quick reinstall of homebrew things were mostly ok. Homebrew was working again, at least, and listed all my installed packages even if I couldn't use them. `brew link zsh` did the trick there.
+
+For the rest of my applications, I'm just linking or reinstalling them as needed. This computer isn't long for this world, and I'd rather not take any heroic efforts to keep it chugging along. I wouldn't _mind_ starting completely from scratch, but since I'll probably never own another intel Mac it seems like a waste of time.
