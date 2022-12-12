@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Erik Online</title>
+      <link>https://erik-online.com/blog</link>
+      <description>A blog dedicated to Erik</description>
+      <language>en-us</language>
+      <managingEditor>address@yoursite.com (Erik Stockmeier)</managingEditor>
+      <webMaster>address@yoursite.com (Erik Stockmeier)</webMaster>
+      <lastBuildDate>Thu, 12 Dec 2019 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://erik-online.com/tags/dotfiles/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://erik-online.com/blog/shell-startup-scripts</guid>
+    <title>Shell startup scripts</title>
+    <link>https://erik-online.com/blog/shell-startup-scripts</link>
+    <description>What loads when in your terminal or shell session</description>
+    <pubDate>Thu, 12 Dec 2019 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Erik Stockmeier)</author>
+    <category>unix</category><category>linux</category><category>macOS</category><category>bash</category><category>zsh</category><category>dotfiles</category>
+  </item>
+
+    </channel>
+  </rss>

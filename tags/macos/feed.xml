@@ -8,7 +8,7 @@
       <managingEditor>address@yoursite.com (Erik Stockmeier)</managingEditor>
       <webMaster>address@yoursite.com (Erik Stockmeier)</webMaster>
       <lastBuildDate>Mon, 12 Dec 2022 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://erik-online.com/feed.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://erik-online.com/tags/macos/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>https://erik-online.com/blog/i-messed-up-my-computer</guid>
@@ -18,26 +18,6 @@
     <pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate>
     <author>address@yoursite.com (Erik Stockmeier)</author>
     <category>homebrew</category><category>macOS</category><category>linux</category>
-  </item>
-
-  <item>
-    <guid>https://erik-online.com/blog/thoughts-on-remote-work</guid>
-    <title>Thoughts on remote work</title>
-    <link>https://erik-online.com/blog/thoughts-on-remote-work</link>
-    <description>Work relationships have become more central to our lives just as they have grown more distant.</description>
-    <pubDate>Sun, 20 Feb 2022 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Erik Stockmeier)</author>
-    <category>pandemic</category><category>isolation</category><category>remote work</category><category>burnout</category><category>PMC problems</category>
-  </item>
-
-  <item>
-    <guid>https://erik-online.com/blog/new-website</guid>
-    <title>New website</title>
-    <link>https://erik-online.com/blog/new-website</link>
-    <description>I decided it was time for a fresh start.</description>
-    <pubDate>Sun, 13 Feb 2022 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (Erik Stockmeier)</author>
-    
   </item>
 
   <item>
