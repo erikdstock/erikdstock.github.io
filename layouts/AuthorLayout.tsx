@@ -41,6 +41,11 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             </div>
           </div>
           <div className="prose max-w-none pt-8 pb-8 dark:prose-dark xl:col-span-2">{children}</div>
+          <img
+            className="max-h-sm mx-auto max-w-sm"
+            src="/static/images/eol.png"
+            alt="Early logo concept"
+          />
         </div>
       </div>
     </>

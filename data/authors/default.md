@@ -1,6 +1,6 @@
 ---
 name: Erik Stockmeier
-avatar: /static/images/avatar.png
+avatar: /static/images/avatar.jpeg
 occupation: Software engineer
 # company: Stanford University
 email: email@erikstockmeier.com
