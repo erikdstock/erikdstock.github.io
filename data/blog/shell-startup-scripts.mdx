@@ -1,0 +1,114 @@
+---
+title: Shell startup scripts
+date: '2019-12-12'
+tags: ['unix', 'linux', 'macOS', 'bash', 'zsh', 'dotfiles']
+draft: false
+summary: What loads when in your terminal or shell session
+images: []
+layout: PostLayout
+---
+
+_originally published 2019_
+
+> 2022 update: When I set up a new M1 Mac work machine homebrew recommended I load it in [my `~/.zprofile`](https://github.com/erikdstock/dotfiles/blob/c0688bcbe49b27c20ca1310505486120a992a957/homedir/zprofile). This complicates the takeaways I give below, but I guess the main update would be that tools you need only for interactive sheels can go in there. My dotfiles need an overhaul.
+
+MacOS 10.15 (Catalina) changed the default shell from `bash` to `zsh`, which
+encouraged me to finally figure out what the heck is going on when I log in and
+why my dotfiles always feel like such a mess. This includes both the strange
+loading logic (of `bash` in particular) as well as the quirks that Apple's macOS
+adds to the mix. It turns out that it's not that bad. (Note: for all purposes
+here I am only talking about shells loaded via a [GUI] Terminal app)
+
+## Default shell startup script loading order
+
+The charts below are copied from a
+[2008 blog post](https://shreevatsa.wordpress.com/2008/03/30/zshbash-startup-files-loading-order-bashrc-zshrc-etc/)
+that stands the test of time.
+
+They illustrate how a given shell environment selects which scripts to execute
+on startup, beginning from the top of a given column and continuing through each
+script marked with a letter in alphabetical order- but only the _first_ file
+found for each letter. The columns account for varying strategies depending on
+whether the shell is being created for a script or for an interactive shell and,
+in the later case, whether the interactive shell is a login shell.
+
+In Unix terms, a _login shell_ is the shell used at startup - for example, the
+shell which starts the X Window server or otherwise starts the system such as
+via ssh or when logging in through a tty terminal (not sure why we still pretend
+these things exist).
+
+The key caveat on these charts for Mac users is explained
+[here](https://apple.stackexchange.com/questions/119711/why-doesnt-mac-os-x-source-bashrc):
+On macOS, launching a new terminal or terminal tab is treated as a login shell.
+Regardless of your OS, once you are _in the terminal_ subshells (like running
+`bash`) are _not_ login shells.
+
+**As a result, most Linux users should read down the second column for their
+shell, while most Mac users would read down the first.**
+
+### `bash` startup scripts
+
+Bash's startup script strategy is especially complicated for Mac users:
+
+- For an interactive non-login shell (that is, linux), `~/.bashrc` is executed
+  and the main point for user customization
+- For macOS's interactive non-login shell (even in terminal.app), `~/.bashrc` is
+  ignored in favor of the _first_ file found of `~/.bash_profile`,
+  `~/.bash_login` and `~/.profile` (below, only the _first_ of _B1, B2, or B3_).
+
+**To simplify this, the common advice has been to add '`source ~/.bashrc`' to
+your `~/.bash_profile` (the first of the optional login scripts) and keep
+customizations in `~/.bashrc`.**
+
+|                    | Interactive login | Interactive non-login | Script |
+| ------------------ | ----------------- | --------------------- | ------ |
+| `/etc/profile`     | A                 |                       |        |
+| `/etc/bash.bashrc` |                   | A                     |        |
+| `~/.bashrc`        |                   | B                     |        |
+| `~/.bash_profile`  | B1                |                       |        |
+| `~/.bash_login`    | B2                |                       |        |
+| `~/.profile`       | B3                |                       |        |
+| `source $BASH_ENV` |                   |                       | A      |
+| _logout only:_     |                   |                       |        |
+| `~/.bash_logout`   | C                 |                       |        |
+
+### `zsh` startup scripts
+
+`zsh` is straightforward by comparison. It is still a login shell on mac, though
+most folks only bother with `.zshrc` and there are no strange loading quirks.
+
+Most folks I know use only `.zshrc` and/or [Oh my zsh](https://ohmyz.sh/) to
+manage their `zsh`.
+
+|                 | Interactive login | Interactive non-login | Script |
+| --------------- | ----------------- | --------------------- | ------ |
+| `/etc/zshenv`   | A                 | A                     | A      |
+| `~/.zshenv`     | B                 | B                     | B      |
+| `/etc/zprofile` | C                 |                       |        |
+| `~/.zprofile`   | D                 |                       |        |
+| `/etc/zshrc`    | E                 | C                     |        |
+| `~/.zshrc`      | F                 | D                     |        |
+| `/etc/zlogin`   | G                 |                       |        |
+| `~/.zlogin`     | H                 |                       |        |
+| _logout only:_  |                   |                       |        |
+| `~/.zlogout`    | I                 |                       |        |
+| `/etc/zlogout`  | J                 |                       |        |
+
+## Key Takeaways
+
+- Mac shells start out as login shells. This makes `bash`'s startup script
+  loading order more complicated.
+- Put your `bash` customizations in `~/.bashrc` and source it from
+  `~/.bash_profile` to avoid this issue.
+- Put your `zsh` customizations in `~/.zshrc`.
+- On a Mac, you can print any welcome or diagnostic messages from
+  `~/.bash_profile` or `~/.zlogin`.
+
+## Other References
+
+- [A post I read about this in the past, then forgot about](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html)
+- [Comparing `bash` and `zsh` (Stack Exchange)](https://apple.stackexchange.com/questions/361870/what-are-the-practical-differences-between-bash-and-zsh/361957#361957)
+- [Checking if you are in a login shell (Stack Overflow)](https://unix.stackexchange.com/questions/26676/how-to-check-if-a-shell-is-login-interactive-batch)
+- [Updating your shell, including homebrew-installed shells](https://johndjameson.com/blog/updating-your-shell-with-homebrew/)
+- [zsh docs](http://zsh.sourceforge.net/Doc/Release/Files.html)
+- [bash docs](http://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Bash-Startup-Files)
