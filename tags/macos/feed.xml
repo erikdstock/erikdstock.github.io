@@ -14,10 +14,10 @@
     <guid>https://erik-online.com/blog/i-messed-up-my-computer</guid>
     <title>I messed up my computer again.</title>
     <link>https://erik-online.com/blog/i-messed-up-my-computer</link>
-    <description>I somehow deleted the contents of /usr/local/bin</description>
+    <description>I somehow deleted the contents of /usr/local/bin 😬</description>
     <pubDate>Mon, 12 Dec 2022 00:00:00 GMT</pubDate>
     <author>address@yoursite.com (Erik Stockmeier)</author>
-    <category>homebrew</category><category>macOS</category><category>linux</category>
+    <category>homebrew</category><category>macOS</category>
   </item>
 
   <item>
