@@ -1,8 +1,8 @@
 const projectsData = [
   {
     title: 'Art gallery',
-    description: `I do not consider myself an artist, but I have made some art over the years.`,
-    imgSrc: 'static/images/art/adam-fentry.jpeg',
+    description: `I am not much of an artist, but I have made some art over the years.`,
+    imgSrc: 'static/images/art/young-painter.jpeg',
     href: '/projects/art-barn',
   },
 ]

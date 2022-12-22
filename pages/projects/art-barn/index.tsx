@@ -1,9 +1,6 @@
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import formatDate from '@/lib/utils/formatDate'
-import NewsletterForm from '@/components/NewsletterForm'
+
 import artworks from '@/data/artworksData'
 import Card from '@/components/Card'
 
@@ -19,19 +16,24 @@ export default function ArtGallery() {
             Erik's Art Barn
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            A curated exhibition of artworks I have produced over the years.
+            A permanent virtual exhibition of artworks I have produced over the years.
           </p>
         </div>
-        <div className="container py-12">
+        <div className="container py-12 dark:bg-white">
           <div className="justify-center gap-6 md:columns-2">
             {artworks.map((a) => (
               <Card
                 key={a.title}
                 title={a.title}
                 cover={false}
-                description={`${a.date} (${a.medium}) - ${a.description}`}
                 imgSrc={`${ARTWORK_SRC_DIR}/${a.images[0]}`}
-              />
+              >
+                <>
+                  <em>{a.medium},</em> {a.date}.
+                  <br />
+                  {a.description}
+                </>
+              </Card>
             ))}
           </div>
         </div>

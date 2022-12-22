@@ -3,15 +3,20 @@ import Image from './Image'
 
 interface Props {
   title: string
-  description: string
+  // Mutually exclusive with children
+  description?: string
   imgSrc: string
   href?: string
   cover?: boolean
+  // Optional - overrides description
+  children?: JSX.Element
 }
-const Card = ({ title, description, imgSrc, href, cover = true }: Props) => {
+
+const Card = ({ title, description, children, imgSrc, href, cover = true }: Props) => {
   const imgStyles = cover
     ? { className: 'object-cover object-center md:h-36 lg:h-48', width: 544, height: 306 }
     : { className: 'object-fit' }
+
   return (
     <div className="md w-full p-4" style={{ maxWidth: '544px' }}>
       <div
@@ -37,7 +42,9 @@ const Card = ({ title, description, imgSrc, href, cover = true }: Props) => {
               title
             )}
           </h2>
-          <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+          <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">
+            {description || children}
+          </p>
           {href && (
             <Link
               href={href}
