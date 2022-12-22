@@ -1,5 +1,5 @@
-import { PostFrontMatter } from 'types/PostFrontMatter'
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import { PostFrontMatter } from 'types/MarkdownImports'
+import { AuthorFrontMatter } from 'types/MarkdownImports'
 const SHOW_DRAFTS_IN_DEVELOPMENT = true
 
 export const isDevelopment = process.env.NODE_ENV === 'development'

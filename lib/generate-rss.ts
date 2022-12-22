@@ -1,7 +1,7 @@
 import { escape } from '@/lib/utils/htmlEscaper'
 
 import siteMetadata from '@/data/siteMetadata'
-import { PostFrontMatter } from 'types/PostFrontMatter'
+import { PostFrontMatter } from 'types/MarkdownImports'
 
 const generateRssItem = (post: PostFrontMatter) => `
   <item>

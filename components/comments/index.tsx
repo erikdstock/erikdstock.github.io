@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import dynamic from 'next/dynamic'
-import { PostFrontMatter } from 'types/PostFrontMatter'
+import { PostFrontMatter } from 'types/MarkdownImports'
 
 interface Props {
   frontMatter: PostFrontMatter

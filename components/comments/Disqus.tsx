@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import siteMetadata from '@/data/siteMetadata'
-import { PostFrontMatter } from 'types/PostFrontMatter'
+import { PostFrontMatter } from 'types/MarkdownImports'
 
 interface Props {
   frontMatter: PostFrontMatter

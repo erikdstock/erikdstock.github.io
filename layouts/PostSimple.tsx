@@ -7,7 +7,7 @@ import formatDate from '@/lib/utils/formatDate'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { ReactNode } from 'react'
-import { PostFrontMatter } from 'types/PostFrontMatter'
+import { PostFrontMatter } from 'types/MarkdownImports'
 
 interface Props {
   frontMatter: PostFrontMatter
