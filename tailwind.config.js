@@ -93,7 +93,12 @@ module.exports = {
             blockquote: {
               color: theme('colors.gray.900'),
               borderLeftColor: theme('colors.gray.200'),
+              fontStyle: 'normal',
             },
+            // Remove wrapping quotes from blockquotes
+            // https://github.com/tailwindlabs/tailwindcss-typography/pull/139
+            'blockquote p:first-of-type::before': null,
+            'blockquote p:last-of-type::after': null,
           },
         },
         dark: {
