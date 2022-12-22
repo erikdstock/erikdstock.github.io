@@ -1,0 +1,94 @@
+---
+title: A nasty `ruby` gotcha for node.js developers
+date: '2022-12-22'
+tags: ['ruby', 'til', 'rspec', 'testing', 'node.js', 'ecmascript']
+draft: false
+summary: Ruby uses backticks for subshell commands, not strings
+images: []
+layout: PostLayout
+---
+
+A difference in how ruby and node.js treat backticks presents a tempting pitfall for developers writing ruby tests.
+
+> TL;DR: If you need to preserve line breaks in a ruby string, use a squiggly `<<~HEREDOC.strip`. If you are trying to test around annoying line breaks in Rails, try `String#squish`.
+
+Developers working in the Node.js/ECMAScript universe are familiar with the language's [template string literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). One feature that has made them so popular, even when string interpolation is not needed, is the ability to preserve line breaks:
+
+```ts
+const result = 'Your order\nis ready'
+const expected = `You're order
+is ready`
+
+result.includes(expected)
+// => false
+```
+
+In ruby however, [backticks are a shorthand for running a script](https://ruby-doc.org/3.1.3/Kernel.html#method-i-60) in a shell and returning its output to STDOUT as a string:
+
+```rb
+my_files = `ls ~`
+# => "Applications\nDesktop\nDocuments\nDownloads\n ...
+```
+
+If the script errors, the backticked method exits and returns `nil`, but adding a line break
+obscures this behavior, returning an empty string (nothing was sent to STDOUT) instead:
+
+```rb
+x = `Your order`
+# Errno::ENOENT: No such file or directory - Your
+x
+# => nil
+
+expected = `Your order
+is ready`
+# sh: Your: command not found
+# sh: line 1: is: command not found
+# => ""
+```
+
+If you are accustomed to using this backticked behavior to test strings with line breaks, these
+quirks can combine to hide false positives in tests:
+
+```rb
+expected = `Your order
+is ready`
+
+"You're order\nis ready".include?(expected)
+# => true
+```
+
+## Testing multiline strings in ruby
+
+Ruby's (uglier, more awkward) method for a case like this is to use its [HEREDOC format](https://www.rubyguides.com/2018/11/ruby-heredoc/):
+
+```rb
+expected = <<~HERE
+  Your order
+  is ready
+HERE
+# => "Your order\nis ready\n"
+
+# Again without the final newline:
+expected = <<~HERE.strip
+  Your order
+  is ready
+HERE
+# => "Your order\nis ready"
+
+# Finally our test is working
+"You're order\nis ready".include?(expected)
+# => false
+```
+
+Depending on your testing needs, there are other ways to get around this. In rails for example
+[String#squish](https://apidock.com/rails/String/squish) will convert all successive whitespaces in a string to a single space.
+
+```rb
+actual = "Your order\nis ready"
+expected = "Your order is ready"
+
+test_subject = actual.squish
+
+test_subject.include?(expected)
+# => true
+```
