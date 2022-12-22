@@ -8,8 +8,8 @@ import Image from '@/components/Image'
 import Comments from '@/components/comments'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import { ReactNode } from 'react'
-import { PostFrontMatter } from 'types/PostFrontMatter'
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import { PostFrontMatter } from 'types/MarkdownImports'
+import { AuthorFrontMatter } from 'types/MarkdownImports'
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>

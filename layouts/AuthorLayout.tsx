@@ -1,7 +1,7 @@
 import SocialIcon from '@/components/social-icons'
 import { PageSEO } from '@/components/SEO'
 import { ReactNode } from 'react'
-import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
+import { AuthorFrontMatter } from 'types/MarkdownImports'
 import Image from '@/components/Image'
 
 interface Props {
