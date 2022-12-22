@@ -1,0 +1,1 @@
+{"pageProps":{"posts":[{"title":"A nasty `ruby` gotcha for node.js developers","date":"2022-12-22T00:00:00.000Z","tags":["ruby","til","rspec","testing","node.js","ecmascript"],"draft":false,"summary":"Ruby uses backticks for subshell commands, not strings","images":[],"layout":"PostLayout","slug":"ruby-backticks-gotcha"}],"tag":"nodejs"},"__N_SSG":true}

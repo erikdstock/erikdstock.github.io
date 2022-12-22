@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Erik Online</title>
+      <link>https://erik-online.com/blog</link>
+      <description>A blog dedicated to Erik</description>
+      <language>en-us</language>
+      <managingEditor>webmaster@erik-online.com (Erik Stockmeier)</managingEditor>
+      <webMaster>webmaster@erik-online.com (Erik Stockmeier)</webMaster>
+      <lastBuildDate>Thu, 22 Dec 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://erik-online.com/tags/ruby/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://erik-online.com/blog/ruby-backticks-gotcha</guid>
+    <title>A nasty `ruby` gotcha for node.js developers</title>
+    <link>https://erik-online.com/blog/ruby-backticks-gotcha</link>
+    <description>Ruby uses backticks for subshell commands, not strings</description>
+    <pubDate>Thu, 22 Dec 2022 00:00:00 GMT</pubDate>
+    <author>webmaster@erik-online.com (Erik Stockmeier)</author>
+    <category>ruby</category><category>til</category><category>rspec</category><category>testing</category><category>node.js</category><category>ecmascript</category>
+  </item>
+
+    </channel>
+  </rss>
