@@ -9,7 +9,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/erikdstock/erikdstock.github.io',
   siteLogo: '/static/images/logo.svg',
   image: '/static/images/avatar.jpeg',
-  socialBanner: '/static/images/twitter-card.png',
+  socialBanner: '/static/images/site-banner.png',
   email: 'webmaster@erik-online.com',
   github: 'https://github.com/erikdstock',
   mastodon: 'https://mastodon.social/@microchungus',
